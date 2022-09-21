@@ -22,25 +22,25 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
 // this should log: true
-
+console.log("is numberTeachers less than numberStudents?", numberTeachers < numberStudents )
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
 // this should log: false
-
+console.log("is numberTeachers strictly equal to stringTeachers?", numberTeachers === numberStudents)
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
-
+console.log("is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents)
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
 // this should log: true
-
+console.log("is numberStudents greater than or equal to 20?", numberStudents >= 20)
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
-
+console.log("is numberStudents greater than or equal to 21?", numberStudents >= 21)
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
 // this should log: true
-
+console.log("is numberStudents less than or equal to 20?", numberStudents<= 20)
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
 // this should log: true
-
+console.log("is numberStudents less than or equal to 21?", numberStudents<= 21)
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -53,21 +53,27 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 console.log(4 < 9);
 // YOU DO: Explain.
+//This conditional is asking if the number 4 is less than 9. This should evaluate to true
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+//This conditional is asking if the number 4 is less than the books variable that is set equal to 3.
+//This should evaluate to false
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+//This conditional is asking if the friends variable that is set equal to 6 is greater than the siblings variable that is set equal to 2
+//This should evaluate to true
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees != meals);
 // YOU DO: Explain.
-
+//This conditional is asking if the attendies variable that is set to the value of 9 is not equal to the meals variable that is set equal to 8
+//This should evaluate to true
 
 // #-------------------
 // PART 3: Logical Operators
@@ -89,15 +95,16 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats)
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log(lovesToPlay && lovesDogPark)
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log(lovesToPlay || lovesDogPark)
 
 // Determine if the dog loves to play and is a puppy
-
+console.log(lovesToPlay && age)
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: Since the variable of age is not set to a boolean value the conditional we've created does not run corretly.
+// In order for it to run appropriately, we would need to change the value of the age variable to either true or false.
